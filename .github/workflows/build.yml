@@ -64,7 +64,7 @@ jobs:
         matrix:
           suite:
             - jammy
-            #- noble
+            - noble
     steps:
       - name: Get more disk space
         uses: jlumbroso/free-disk-space@main
@@ -117,10 +117,10 @@ jobs:
           - rock-5b
         flavor:
           - desktop
-          #- server
+          - server
         suite:
           - jammy
-          #- noble
+          - noble
         exclude:
           - board: armsom-sige5
             suite: jammy
