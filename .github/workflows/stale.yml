@@ -1,10 +1,14 @@
 ---
 name: Close inactive issues
 run-name: Close inactive issues
-'on':
-  schedule:
-    - cron: "0 12 * * 1"
-
+#-------------------------
+#'on':
+#  schedule:
+#    - cron: "0 12 * * 1"
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  
 jobs:
   close-issues:
     runs-on: ubuntu-latest
